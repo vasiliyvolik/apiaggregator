@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'reports/style.css' %}">
+</head>
+<body>
+
+
+<table class="blueTable">
+    <tbody>
+
+    {% for item in list %}
+<tr>
+    <td> {{ item.0 }} </td>
+    <td> {{ item.1 }} </td>
+    <td> {{ item.2 }} </td>
+</tr>
+{% endfor %}
+
+    </tbody>
+</table>
+
+</body>
+</html>
